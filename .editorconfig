@@ -11,7 +11,7 @@ charset = utf-8
 indent_style = space
 indent_size = 4
 
-[*.{html,css,scss,js,json,dart,yaml,txt}]
+[*.{html,css,scss,js,json,dart,yaml,txt,sql}]
 indent_style = space
 indent_size = 2
 
@@ -22,3 +22,8 @@ trim_trailing_whitespace = false
 
 [Makefile]
 indent_style = tab
+indent_size = 8
+
+[TODO]
+indent_style = space
+indent_size = 2
