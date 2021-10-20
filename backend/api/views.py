@@ -17,8 +17,10 @@ def tutorial_list(request):
         tutorials = Tutorial.objects.all()
 
         title = request.GET.get('title', None)
+        print(title)
         if title is not None:
-            tutorials = tutorials.filter(title_icontains=title)
+            tutorials = tutorials.filter(title__icontains=title)
+            print(tutorials)
 
         tutorials_serializer = TutorialSerializer(tutorials, many=True)
         # 'safe=False' for objects serialization
